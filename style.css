@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(128, 128, 128, 0.308);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+.products{
+    margin-top: 4rem;
+ display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 50vh;
+    max-height: 60vh;
+    margin-right: 1rem;
+    overflow: scroll;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+    background: white;
+    border-radius:5px ;
+    padding: 1rem;
+   
+}
+.product::-webkit-scrollbar{
+   display: none;
+   
+}
+.product .image{
+ margin-bottom: 2rem;
+  width: 100%;
+  height: 30rem;
+
+ align-self: center;
+  overflow: hidden;
+  /* border-radius: 50%; */
+  border: 1px solid rgba(0, 0, 0, 0.226);
+
+}
+.product .image img{
+width: 100%;
+height: 100%;
+
+
+}
+.product .details{
+display: flex;
+font-size: 1.5rem;
+justify-content: space-between;
+}
+.product .description{
+
+font-size: small;
+margin-bottom: 1rem;
+max-width: 40vh;
+
+display: flex;
+flex-wrap: wrap;
+}
+button{
+    cursor: pointer;
+    padding: .6rem;
+    font-family: inherit;
+    border: none;
+    color: white;
+    
+    border-radius: 5px;
+    background: rgba(5, 109, 5, 0.856);
+}
+
+/* form================================ */
+form{
+    margin-top: 3rem;
+    padding: 2rem;
+    min-width: 30vw;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.247);
+    background: white;
+}
+.form-group{
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+form input ,select,textarea{
+    padding: .5rem;
+    border: 1px solid rgba(0, 128, 0, 0.733);
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+}
+form button{
+   margin-top: 1rem;
+   width: 100%;
+   padding: .6rem;
+}
+.product a{
+    margin-top: 1rem;
+   text-align: center;
+    background: rgb(4, 48, 4);
+    text-decoration: none;
+    border: 1px solid rgb(4, 48, 4) ;
+    color: aliceblue;
+    padding: .5rem;
+    border-radius: 3px;
+ }
